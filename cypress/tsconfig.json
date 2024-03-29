@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false,                                /* Create source map files for emitted JavaScript files. */
+    "inlineSourceMap": false,                          /* Include sourcemap files inside the emitted JavaScript. */
+    "noEmit": false,
+    // be explicit about types included
+    // to avoid clashing with Jest types
+    // "types": ["cypress"]
+  },
+  "include": [
+   // "../node_modules/cypress",
+    "./**/*.steps.ts"
+  ]
+}

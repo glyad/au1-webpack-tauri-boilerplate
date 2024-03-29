@@ -12,8 +12,18 @@
     "aurelia-bootstrapper": "^2.4.0"
   },
   "devDependencies": {
+    "@badeball/cypress-configuration": "^6.1.1",
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.3",
+    "@cucumber/ci-environment": "^10.0.1",
+    "@cucumber/cucumber": "^10.3.2",
+    "@cucumber/cucumber-expressions": "^17.1.0",
+    "@cucumber/message-streams": "^4.0.1",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@cucumber/tag-expressions": "^6.1.0",
+    "@cypress/webpack-preprocessor": "^6.0.1",
     "@playwright/test": "^1.42.1",
     "@tauri-apps/cli": "^1.5.11",
+    "@types/cypress-cucumber-preprocessor": "^4.0.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.30",
     "@types/webpack": "^5.28.5",
@@ -30,6 +40,7 @@
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.10.0",
     "cssnano": "^6.1.2",
+    "cypress": "^13.7.1",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "eslint": "^8.57.0",
     "expose-loader": "^4.1.0",
@@ -74,10 +85,12 @@
     "docker:start": "docker-compose up -d",
     "docker:stop": "docker-compose down",
     "tauri": "tauri",
-    "tauri:build": "tauri build"
+    "tauri:build": "tauri build",
+    "cypress:open": "cypress open",
+    "cy": "npm run cypress:open"
   },
   "engines": {
-    "node": ">=14.15.0"
+    "node": ">=18.0.0"
   },
   "overrides": {
     "chokidar": "^3.6.0",

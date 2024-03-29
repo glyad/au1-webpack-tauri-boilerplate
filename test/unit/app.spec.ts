@@ -1,6 +1,7 @@
 import {bootstrap} from 'aurelia-bootstrapper';
 import {ComponentTester, StageComponent} from 'aurelia-testing';
 import {PLATFORM} from 'aurelia-pal';
+import { expect } from "@jest/globals";
 
 describe('Stage App Component', () => {
   let component: ComponentTester<unknown>;

@@ -12,8 +12,15 @@
   "parserOptions": {
     "ecmaVersion": 2019,
     "sourceType": "module",
-    "project": "./tsconfig.json",
-    "tsconfigRootDir": "."
+    "project": "./tsconfig.lint.json",
+    "tsconfigRootDir": ".",
+    "exclude": [
+      "node_modules",
+      "dist",
+      "cypress",
+      "**/*.json", 
+      "cypress.config.ts"
+    ]
   },
   "rules": {
     "no-unused-vars": 0,

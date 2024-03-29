@@ -10,20 +10,29 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "target": "es5",
+    "target": "es6",
     "lib": [
-      "es2015",
+      "es2017",
       "dom"
     ],
     "moduleResolution": "node",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "resolveJsonModule": true,
     "importHelpers": true,
     "allowJs": true
   },
   "include": [
     "src",
-    "test"
+    "test",
+    "cypress"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.json",
+    "**/*.config.*",
+    "test/coverage-jest/**/*.*",
+    "cypress.config.ts",
   ],
   "atom": {
     "rewriteTsconfig": false

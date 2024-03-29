@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["*/**/*.ts", "*/**/*.js", "*/**/*.json", "cypress.config.ts", "webpack.config.js"],
+  "exclude": ["node_modules", "dist"]
+}
