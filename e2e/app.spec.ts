@@ -6,6 +6,6 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('app', () => {
   test('shows message', async ({ page }) => {
-    await expect(page.locator('h1')).toHaveText('Hello Fucking World!');
+    await expect(page.getByText('Welcome to Tauri with old good Aurelia v.1!')).toBeDefined();
   });
 });

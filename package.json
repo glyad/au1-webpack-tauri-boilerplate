@@ -78,6 +78,8 @@
     "start": "tauri dev",
     "dev": "webpack server",
     "cy": "npm run cypress:open",
+    "cypress": "cypress",
+    "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "build": "webpack --env production",
     "build:dev": "webpack",
