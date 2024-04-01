@@ -49,12 +49,16 @@ async function setupNodeEvents(
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default defineConfig(<Cypress.ConfigOptions<any>>{
   e2e: {
-    baseUrl: "https://localhost:8080",
+    baseUrl: "http://localhost:8080",
     specPattern: "**/*.feature",
     setupNodeEvents,
     downloadsFolder: "cypress/downloads",
+    experimentalMemoryManagement: true,
+    experimentalStudio: true,
     experimentalWebKitSupport: true,
     fileServerFolder: "./",
+    viewportHeight: 960,
+    viewportWidth: 1000,
     watchForFileChanges: true,
   }  
 });

@@ -20,9 +20,11 @@
     },
     "windows": [
       {
-        "title": "au1-webpack-tauri-boilerplate",
-        "width": 800,
-        "height": 600
+        "title": "TAurelia v.1",
+        "minWidth": 960,
+        "minHeight": 780,
+        "width": 960,
+        "height": 780
       }
     ],
     "security": {
