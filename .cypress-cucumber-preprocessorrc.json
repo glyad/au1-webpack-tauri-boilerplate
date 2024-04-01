@@ -1,12 +1,10 @@
 {
   "json": {
     "enabled": true
-  },
-  
+  },  
     "pretty": {
       "enabled": true
-    }
-  ,
+    },
   "stepDefinitions": [
     "cypress/e2e/**/*.steps.ts",
     "cypress/step_definitions/**/*.steps.ts",
