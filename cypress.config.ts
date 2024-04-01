@@ -60,5 +60,6 @@ export default defineConfig(<Cypress.ConfigOptions<any>>{
     viewportHeight: 960,
     viewportWidth: 1000,
     watchForFileChanges: true,
+    reporter: require.resolve("@badeball/cypress-cucumber-preprocessor/pretty-reporter")
   }  
 });
